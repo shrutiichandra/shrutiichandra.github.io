@@ -1,0 +1,282 @@
+<html>
+
+<body>
+    <style type="text/css">
+    .wrapper_my {
+        /*border: 5px solid #462921;*/
+        width: max-content;
+        height: max-content;
+        ;
+        margin: 0 auto;
+        display: grid;
+        padding: 6px auto;
+        grid-gap: 0;
+        grid-template-columns: repeat(6, 70px);
+        grid-template-rows: repeat(6, 30px);
+        grid-auto-flow: row;
+    }
+
+    .wrapper-inner-my {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        align-items: strech;
+    }
+
+    .box-my {
+        padding: 2px auto;
+        font-size: 1em;
+        /*background-color: #fe8;*/
+        color: #000;
+        text-align: left;
+    }
+
+    .box-inner-my {
+        text-align: center;
+        align-self: center;
+    }
+
+    #mood,
+    .top-my,
+        {
+        display: grid;
+        align-items: stretch;
+        background-color: #fe8;
+    }
+
+    .top-my {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #pfuture {
+        background: #ffd9cc;
+    }
+
+    #pconditional {
+        background: #cccc99;
+    }
+
+    #pimperfect {
+        background: #ffff99;
+    }
+
+    #ppreterite {
+        background: #8cff66;
+    }
+
+    #ppresent {
+        background: #33ccff;
+    }
+
+    #sfuture {
+        background: #ff794d;
+    }
+
+    #sconditional {
+        background: #666633;
+    }
+
+    #simperfect {
+        background: #ffff00;
+    }
+
+    #spreterite {
+        background: #00ff00;
+    }
+
+    #spresent {
+        background: #0099cc;
+    }
+
+    #ifuture {
+        background: #cc3300;
+    }
+
+    #iconditional {
+        background: #333300;
+    }
+
+    #iimperfect {
+        background: #cccc00;
+    }
+
+    #ipreterite {
+        background: #339933;
+    }
+
+    #ipresent {
+        background: #003366;
+    }
+    </style>
+    <div class="wrapper_my">
+        <div class="top-my">
+            <div class="wrapper-inner-my">
+                <div class="box-inner-my">Mood/Tense</div>
+                <!--1-->
+                <div class="box-inner-my">Present</div>
+                <!--2-->
+                <div class="box-inner-my">Preterite</div>
+                <!--3-->
+                <div class="box-inner-my">Imperfect</div>
+                <!--4-->
+                <div class="box-inner-my">Conditional</div>
+                <!--5-->
+                <div class="box-inner-my">Future</div>
+            </div>
+        </div>
+        <div class="box-my" id="mood">Indicative</div>
+        <div class="box-my" id="ipresent"></div>
+        <div class="box-my" id="ipreterite"></div>
+        <div class="box-my" id="iimperfect"></div>
+        <div class="box-my" id="iconditional"></div>
+        <div class="box-my" id="ifuture"></div>
+        <div class="box-my" id="mood">Subjunctive</div>
+        <div class="box-my" id="spresent"></div>
+        <div class="box-my" id="spreterite"></div>
+        <div class="box-my" id="simperfect"></div>
+        <div class="box-my" id="sconditional"></div>
+        <div class="box-my" id="sfuture"></div>
+        <div class="box-my" id="mood">Perfect</div>
+        <div class="box-my" id="ppresent"></div>
+        <div class="box-my" id="ppreterite"></div>
+        <div class="box-my" id="pimperfect"></div>
+        <div class="box-my" id="pconditional"></div>
+        <div class="box-my" id="pfuture"></div>
+    </div>
+        <ul>
+        <li> Dime si <b style="color:#003366;">es</b> verdad
+        </li>
+        <li> Me <b style="color:#339933;">dijeron</b> que te <b style="color:#003366;"><b style="color:#003366;">estás</b> casando</b>
+        </li>
+        <li> Tú no <b style="color:#003366;">sabes</b> lo <b style="color:#003366;"><b style="color:#003366;">estoy</b> sufriendo</b>
+        </li>
+        <li> Esto te lo <b style="color:#003366;">tengo</b> que decir
+        </li>
+        <li> Cuéntame
+        </li>
+        <li> Tu despedida para mí <b style="color:#339933;"><b style="color:#339933;">fue</b></b> dura
+        </li>
+        <li> <b style="color:#cc3300;">Será</b> que él te <b style="color:#339933;">llevó</b> a la luna
+        </li>
+        <li> Y yo no <b style="color:#339933;">supe</b> hacerlo así
+        </li>
+        <li> Te <b style="color:#cccc00;"><b style="color:#cccc00;"><b style="color:#cccc00;">estaba</b></b> buscando</b>
+        </li>
+        <li> Por las calles gritando
+        </li>
+        <li> Esto me esto <b style="color:#003366;"><b style="color:#003366;">está</b> matando</b>, oh no
+        </li>
+        <li> Te <b style="color:#cccc00;"><b style="color:#cccc00;"><b style="color:#cccc00;">estaba</b></b> buscando</b>
+        </li>
+        <li> Por las calles gritando
+        </li>
+        <li> Ccomo* un loco tomando oh
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin ti, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin tí, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Eso no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Eso no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Vivir sin tí, no <b style="color:#003366;">aguanto</b> más
+        </li>
+        <li> Por eso <b style="color:#003366;">vengo</b> a decirte lo que siento
+        </li>
+        <li> <b style="color:#003366;"><b style="color:#003366;">Estoy</b> sufriendo</b> en la soledad
+        </li>
+        <li> Y aunque tu padre no <b style="color:#339933;">aprobó</b> esta relación
+        </li>
+        <li> Yo sigo insistiendo a pedirte perdón
+        </li>
+        <li> Lo único que <b style="color:#003366;">importa</b> <b style="color:#003366;">está</b> en tu corazón
+        </li>
+        <li> Te <b style="color:#cccc00;"><b style="color:#cccc00;"><b style="color:#cccc00;">estaba</b></b> buscando</b>
+        </li>
+        <li> Por las calles gritando
+        </li>
+        <li> Esto me <b style="color:#003366;"><b style="color:#003366;">está</b> matando</b> oh no
+        </li>
+        <li> Te <b style="color:#cccc00;"><b style="color:#cccc00;"><b style="color:#cccc00;">estaba</b></b> buscando</b>
+        </li>
+        <li> Por las calles gritando
+        </li>
+        <li> Ccomo* un loco tomando oh
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin tí, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin tí, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Eso no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Eso no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> Yo te <b style="color:#339933;">juré</b> a tí eterno amor
+        </li>
+        <li> Y ahora otro te <b style="color:#003366;">da</b> calor
+        </li>
+        <li> Cuando en las noches <b style="color:#003366;">tienes</b> frío oh oh, oh
+        </li>
+        <li> Yo <b style="color:#003366;">sé</b> que él te <b style="color:#003366;">parece</b> mejor
+        </li>
+        <li> Pero yo <b style="color:#003366;">estoy</b> en tu corazón
+        </li>
+        <li> Y por eso <b style="color:#003366;">pido</b> perdón
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin tí, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>, oh no
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b>
+        </li>
+        <li> <b style="color:#003366;">Es</b> que yo sin tí, y tú sin mí
+        </li>
+        <li> Dime quién <b style="color:#003366;"><b style="color:#003366;">puede</b></b> ser feliz
+        </li>
+        <li> Esto no me <b style="color:#003366;">gusta</b> oh yeah, oh
+        </li>
+        <li> <b style="color:#003366;">Dicen</b> que uno no <b style="color:#003366;">sabe</b> lo que <b style="color:#003366;">tiene</b> hasta que lo pierde pero...
+        </li>
+        <li> (Y yo sin tí) Vale la pena luchar por lo que uno <b style="color:#003366;">quiere</b>
+        </li>
+        <li> (No <b style="color:#003366;"><b style="color:#003366;">puedo</b></b> vivir así) Y hacer el intento
+        </li>
+        <li> (No <b style="color:#003366;">quiero</b> vivir así)
+        </li>
+        <li> N.I.C.K
+        </li>
+        <li> Nicky Jam Enrique Iglesias
+        </li>
+        <li> (No <b style="color:#003366;">quiero</b> que me dejes por favor)
+        </li>
+        <li> Saga White Black
+        </li>
+        <li> (Y te <b style="color:#003366;">pido</b> perdón)</li>
+    </ul>
+</body>
+
+</html>
