@@ -1,8 +1,8 @@
 docs_list_title: Tenses
 docs:
 
-# - title: Conjugation
-#   url: conjugation.html
+- title: Conjugation
+  url: conjugation.html
 
 - title: Examples
   url: examples.html
