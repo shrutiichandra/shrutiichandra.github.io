@@ -4,7 +4,7 @@ title:  "Similar words in Spanish & Italian"
 categories: jekyll update
 ---
 <table>
-  {% for row in site.data.italian-spanish-common.csv %}
+  {% for row in site.data.common %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
