@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My travel checklist</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; padding: 20px; }
+        h1 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 10px 0; display: flex; align-items: center; }
+        input { margin-right: 10px; }
+        button { margin-top: 10px; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <h1>Travel checklist !! Vamos</h1>
+    <ul id="taskList">
+        <li><input type="checkbox"> ID</li>
+        <li><input type="checkbox"> Wallet</li>
+        <li><input type="checkbox"> Cash</li>
+        <li><input type="checkbox"> Cards</li>
+        <li><input type="checkbox"> Keys</li>
+        <li><input type="checkbox"> Water bottle</li>
+        <li><input type="checkbox"> Phone</li>
+        <li><input type="checkbox"> Charger</li>
+        <li><input type="checkbox"> Laptop</li>
+        <li><input type="checkbox"> Laptop charger</li>
+        <li><input type="checkbox"> Earphone</li>
+        <li><input type="checkbox"> Specs</li>
+        <li><input type="checkbox"> Sunglasses</li>
+        <li><input type="checkbox"> Meds</li>
+        <li><input type="checkbox"> Comb</li>
+        <li><input type="checkbox"> Hairbands</li>
+        <li><input type="checkbox"> Toothbrush</li>
+        <li><input type="checkbox"> Toothpaste</li>
+        <li><input type="checkbox"> Facewash</li>
+        <li><input type="checkbox"> Shampoo</li>
+        <li><input type="checkbox"> Bodywash</li>
+        <li><input type="checkbox"> Moisturizer</li>
+        <li><input type="checkbox"> Makeup</li>
+        <li><input type="checkbox"> Trimmer</li>
+        <li><input type="checkbox"> Purses</li>
+        <li><input type="checkbox"> Footwear</li>
+    </ul>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+    <script>
+        function addTask() {
+            let taskInput = document.getElementById("taskInput");
+            let taskText = taskInput.value.trim();
+            if (taskText !== "") {
+                let li = document.createElement("li");
+                let checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                li.appendChild(checkbox);
+                li.appendChild(document.createTextNode(taskText));
+                document.getElementById("taskList").appendChild(li);
+                taskInput.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
